@@ -1,4 +1,24 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'SharpGrotesk';
+  src: url('/fonts/SharpGrotesk-Medium20.woff2') format('woff2'),
+       url('/fonts/SharpGrotesk-Medium20.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('/fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
+       url('/fonts/PlusJakartaSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --background: #ffffff;
@@ -14,8 +34,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: white;
+    --foreground: #0a0a0a;
   }
 }
 
@@ -23,4 +43,33 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+h1,h2,h3,h4,h5,h6, button {
+  font-family: "SharpGrotesk", Arial, Helvetica, sans-serif;
+}
+
+p{
+  font-family: "PlusJakartaSans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+h2{
+  font-size: 45px;
+}
+
+h3{
+  font-size: 26px;
+}
+
+
+.section-padding {
+  padding: 120px 100px;
+}
+
+.section-margin {
+  margin: 120px 100px;
 }

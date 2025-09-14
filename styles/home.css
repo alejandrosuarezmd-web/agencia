@@ -1,0 +1,30 @@
+/* {} */
+
+.home-grid {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.home-grid  > .title-container  {
+    grid-row: 1/2;
+}
+
+.title-container h1 {
+    font-size: 70px;
+}
+
+.home-grid > .home-grid-low-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 2/3;
+    gap: 200px;
+}
+
+
+.home-grid > .home-grid-low-row > content {}
+
+
+.home-grid > .home-grid-low-row > .home-grid-image {}
