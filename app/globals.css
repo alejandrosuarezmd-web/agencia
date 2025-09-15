@@ -48,6 +48,7 @@ body {
 
 h1,h2,h3,h4,h5,h6, button {
   font-family: "SharpGrotesk", Arial, Helvetica, sans-serif;
+  line-height: 1.2;
 }
 
 p{
@@ -57,19 +58,54 @@ p{
 }
 
 
-h2{
-  font-size: 45px;
-}
-
-h3{
-  font-size: 26px;
-}
+h1 { font-size: 76px; }
+h2 { font-size: 45px; }
+h3 { font-size: 26px; }
 
 
-.section-padding {
-  padding: 120px 100px;
+.section-padding { padding: 120px 100px; }
+.section-margin { margin: 120px 100px; }
+
+
+/* md: 1200px - 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  /* Aquí tu CSS para pantallas medianas */
+  h1 { font-size: 56px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 24px; }
+
+.section-padding { padding: 80px 50px; }
+.section-margin { margin: 80px 50px; }
+
 }
 
-.section-margin {
-  margin: 120px 100px;
+/* sm: 800px - 1199px */
+@media (min-width: 800px) and (max-width: 1199px) {
+  /* CSS para tablet / pantallas intermedias */
+  h1 { font-size: 42px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 22px; }
+
+  .section-padding { padding: 50px 30px; }
+.section-margin { margin: 50px 30px; }
 }
+
+/* mobile: < 800px */
+@media (max-width: 799px) {
+  /* CSS para móviles */
+  h1 { font-size: 32px; }
+  h2 { font-size: 26px; }
+  h3 { font-size: 22px; }
+
+  .section-padding { padding: 50px 12px; }
+  .section-margin { 
+    margin: 0px 0px; 
+    padding: 80px 12px;
+  }
+}
+
+
+
+form  { 
+    font-family: "PlusJakartaSans", Arial, Helvetica, sans-serif;
+  }

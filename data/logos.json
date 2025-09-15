@@ -1,0 +1,57 @@
+[
+     {
+    "alt": "Tienda Nube",
+    "src": "/logos/TiendaNube.png",
+    "width": 250,
+    "height": 100
+  },
+  {
+    "alt": "Google Ads",
+    "src": "/logos/GoogleAds.png",
+    "width": 250,
+    "height": 100
+  },
+  {
+    "alt": "Hubspot",
+    "src": "/logos/Hubspot.png",
+    "width": 250,
+    "height": 100
+  },
+  {
+    "alt": "Mailchimp",
+    "src": "/logos/Mailchimp.png",
+    "width": 250,
+    "height": 100
+  },
+  {
+    "alt": "Make",
+    "src": "/logos/Make.png",
+    "width": 250,
+    "height": 100
+  },
+  {
+    "alt": "Google Analytics",
+    "src": "/logos/GoogleAnalytics.png",
+    "width": 250,
+    "height": 100
+  },
+  {
+    "alt": "Meta",
+    "src": "/logos/Meta.png",
+    "width": 250,
+    "height": 100
+  },
+ {
+    "alt": "Zapier",
+    "src": "/logos/Zapier.png",
+    "width": 250,
+    "height": 100
+  },
+  {
+    "alt": "Woocommerce",
+    "src": "/logos/Woocommerce.png",
+    "width": 250,
+    "height": 100
+  }
+  
+]

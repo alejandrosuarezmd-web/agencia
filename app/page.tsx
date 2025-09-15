@@ -2,6 +2,8 @@ import Image from "next/image";
 import "../styles/home.css";
 import { JSX } from "react";
 import ContactForm from "./components/Form";
+import LogoCarousel from "./components/LogoCarousel";
+
 
 
 type ButtonCtaProps = {
@@ -26,35 +28,34 @@ export default function Home() {
 
         <div className="home-grid section-padding">
           <div className="title-container flex items-end">
-            <h1>Agencia de desarrollo web<br /> y publicidad digital</h1>
+            <h1>Agencia de desarrollo web<br className="mobile:hidden" /> y publicidad digital</h1>
           </div>
 
           <div className="home-grid-low-row">
-            <div className="content flex flex-col justify-end gap-12 items-start">
-              <p className="pr-20">Creamos la página web, catálogo o tienda online de tu pyme y la potenciamos con publicidad digital estratégica para atraer clientes reales y hacer crecer tu negocio sin complicaciones.</p>
+            <div className="content flex flex-col justify-end md:justify-center gap-12 sm:gap-8 mobile:gap-6 items-start">
+              <p className="pr-20 sm:pr-0 mobile:pr-0">Creamos la página web, catálogo o tienda online de tu pyme y la potenciamos con publicidad digital estratégica para atraer clientes reales y hacer crecer tu negocio sin complicaciones.</p>
               <ButtonCta />
             </div>
 
             <div className="home-grid-image">
               <Image src="/home/image-agency-1.png" alt="Agencia web en Crespo"
                 width={544} height={362}
-                className="rounded-xl"
+                className="rounded-xl sm:w-full mobile:w-full"
               />
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-[1fr_60%] section-padding gap-12">
-          <div className="flex flex-col justify-between items-start">
-            <div className="py-[8px] px-[20px] font-[SharpGrotesk] shadow
-bg-white rounded-full">Nosotros</div>
+        <div className="grid grid-cols-[1fr_60%] sm:grid-cols-1 mobile:grid-cols-1 section-padding gap-12">
+          <div className="flex flex-col justify-between sm:justify-start mobile:justify-start sm:gap-12 mobile:gap-6 items-start">
+            <div className="py-[8px] px-[20px] font-[SharpGrotesk] shadow bg-white rounded-full">Nosotros</div>
 
             <Image
               src="/home/image-agency-1.png"
               alt="Agencia web en Crespo"
               width={544}
               height={362}
-              className="rounded-xl mb-20"
+              className="rounded-xl mb-20 sm:mb-12 mobile:mb-6 sm:w-full mobile:w-full"
             />
           </div>
 
@@ -62,12 +63,12 @@ bg-white rounded-full">Nosotros</div>
 
             <h2>Trabajamos con empresas que quieren potenciar su alcance.</h2>
 
-            <div className="flex justify-between mt-20 border-b-2 border-black pb-2">
+            <div className="flex justify-between mt-20 sm:mt-12 mobile:mt-6 border-b-2 border-black pb-2">
               <h4 className="text-xl">¿Que es lo que hacemos?</h4>
               <span>icon</span>
             </div>
 
-            <div className="grid grid-cols-2 gap-12 my-12">
+            <div className="grid grid-cols-2 md:grid-cols-1 mobile:grid-cols-1 gap-12 md:gap-6 my-12">
               <div className="flex flex-col gap-4">
                 <span>icono</span>
                 <h3>Acompañamos a tu negocio en cada paso</h3>
@@ -88,14 +89,17 @@ bg-white rounded-full">Nosotros</div>
 
 
         <div className="flex flex-col items-start section-margin bg-green text-white
-      py-[50px] px-[130px] rounded-[30px]
+      py-[50px] px-[130px] rounded-[30px] mobile:rounded-none
       
       ">
           <div className="py-[8px] px-[20px] font-[SharpGrotesk] shadow
  rounded-full bg-green-light mb-8">Servicios</div>
-          <h2 className="max-w-[60%]">Soluciones digitales integrales que hacen crecer tu empresa.</h2>
+          <h2 className="max-w-[60%] mobile:max-w-full">Soluciones digitales integrales que hacen crecer tu empresa.</h2>
 
-          <div className="grid grid-cols-3 gap-20 mt-20">
+          <div className="grid grid-cols-3 gap-20 mt-20
+          
+          mobile:grid-cols-1 mobile:gap-6 mobile:mt-10
+          ">
             <div className="flex flex-col gap-4">
               <span>icon</span>
               <h3>Desarrollo Web</h3>
@@ -117,32 +121,32 @@ bg-white rounded-full">Nosotros</div>
 
         </div>
 
-        <div className="home-grid section-padding">
+        <div className="offer-grid section-padding">
           <div className="title-container flex items-end">
-            <h1>¿Sabes cuánto está invirtiendo tu competencia en Google Ads?</h1>
+            <h2>¿Sabes cuánto está invirtiendo<br className="mobile:hidden" /> tu competencia en Google Ads?</h2>
           </div>
 
-          <div className="home-grid-low-row">
-            <div className="content flex flex-col justify-end gap-12 items-start">
-              <p className="pr-20">Solicita tu análisis gratuito de tu industria y recibe un informe con el gasto estimado de tu competencia, el costo por clic en tu sector y oportunidades para captar más clientes pagando menos.</p>
+          <div className="offer-grid-low-row">
+            <div className="content flex flex-col justify-end md:justify-center gap-12 sm:gap-8 mobile:gap-6 items-start">
+              <p className="pr-20 sm:pr-0 mobile:pr-0">Solicita tu análisis gratuito de tu industria y recibe un informe con el gasto estimado de tu competencia, el costo por clic en tu sector y oportunidades para captar más clientes pagando menos.</p>
               <ButtonCta label="Solicitar reporte gratuito" />
             </div>
 
-            <div className="home-grid-image">
+            <div className="offer-grid-image">
               <Image src="/home/image-agency-1.png" alt="Agencia web en Crespo"
                 width={544} height={362}
-                className="rounded-xl"
+                className="rounded-xl sm:w-full mobile:w-full"
               />
             </div>
           </div>
         </div>
 
-
+        <LogoCarousel />
       </main>
 
 
 
-      <footer className="bg-[#373737] grid grid-cols-2 section-padding">
+      <footer className="bg-[#373737] grid grid-cols-2 sm:grid-cols-1 mobile:grid-cols-1 mobile:gap-6 section-padding ">
         <div>
           <h2 className="text-white">Completá el formulario y nos pondremos en contacto a la brevedad</h2>
         </div>

@@ -40,13 +40,13 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+    <form onSubmit={handleSubmit} className="grid grid-cols-2 sm:grid-cols-1 mobile:grid-cols-1 gap-4">
       <input
         type="text"
         placeholder="Nombre"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className="border p-2 rounded"
+        className="border p-2 rounded-[20px] px-4 focus:outline-none"
         required
       />
 
@@ -55,7 +55,7 @@ export default function ContactForm() {
         placeholder="Apellido"
         value={lastName}
         onChange={(e) => setLastName(e.target.value)}
-        className="border p-2 rounded"
+        className="border p-2 rounded-[20px] px-4 focus:outline-none"
         required
       />
       <input
@@ -63,7 +63,7 @@ export default function ContactForm() {
         placeholder="Correo"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="border p-2 rounded"
+        className="border p-2 rounded-[20px] px-4 focus:outline-none"
         required
       />
 
@@ -72,16 +72,16 @@ export default function ContactForm() {
         placeholder="Teléfono"
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
-        className="border p-2 rounded"
+        className="border p-2 rounded-[20px] px-4 focus:outline-none"
         required
       />
 
-<input
+      <input
         type="text"
         placeholder="Empresa"
         value={businessName}
         onChange={(e) => setBusinessName(e.target.value)}
-        className="border p-2 rounded"
+        className="border p-2 rounded-[20px] px-4 focus:outline-none"
         required
       />
 
@@ -90,18 +90,18 @@ export default function ContactForm() {
         placeholder="Puesto"
         value={position}
         onChange={(e) => setPosition(e.target.value)}
-        className="border p-2 rounded"
+        className="border p-2 rounded-[20px] px-4 focus:outline-none"
         required
       />
       <textarea
         placeholder="Mensaje"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        className="border p-2 rounded"
+        className="border p-2 rounded-[20px] col-start-1 col-end-3 sm:col-end-2 mobile:col-end-2  px-4 focus:outline-none min-h-[150px]"
         required
       />
-      <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
-        Enviar
+      <button type="submit" className="bg-orange rounded-[20px] hover:bg-orange-dark text-white py-2 px-4 rounded justify-self-start py-[10px] px-[24px] rounded-full">
+        Enviar Formulario
       </button>
       {status && <p>{status}</p>}
     </form>
