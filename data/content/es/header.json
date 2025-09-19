@@ -1,0 +1,9 @@
+{
+  "logo": "Site Logo",
+  "menu": [
+    { "label": "Desarrollo Web", "href": "#desarrollo-web" },
+    { "label": "Publicidad Digital", "href": "#publicidad-digital" },
+    { "label": "Contacto", "href": "#contactanos" }
+  ],
+  "cta": { "href": "#reporte", "label": "Reporte Gratuito" }
+}

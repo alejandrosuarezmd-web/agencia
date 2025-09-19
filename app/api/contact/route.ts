@@ -34,8 +34,32 @@ export async function POST(req: NextRequest) {
     });
     */
 
-    return NextResponse.json({ message: 'Email enviado' });
+    const webhookUrl = process.env.MAKE_WEBHOOK_URL!;
+
+    const res = await fetch(webhookUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name,
+        lastName,
+        email,
+        phone,
+        businessName,
+        position,
+        message,
+      }),
+    });
+
+    if (!res.ok) {
+      throw new Error("Error al enviar a Make");
+    }
+
+    return NextResponse.json({ message: "Datos enviados a Make correctamente" });
   } catch (err) {
-    return NextResponse.json({ message: 'Error al enviar', error: err }, { status: 500 });
+    console.error(err);
+    return NextResponse.json(
+      { message: "Error al enviar", error: err },
+      { status: 500 }
+    );
   }
 }

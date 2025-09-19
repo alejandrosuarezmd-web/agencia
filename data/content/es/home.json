@@ -1,0 +1,99 @@
+{
+  "hero": {
+    "title": "Agencia de desarrollo web<br className='mobile:hidden' /> y publicidad digital.",
+    "subtitle":"Creamos la página web, catálogo o tienda online de tu pyme y la potenciamos con publicidad digital estratégica para atraer clientes reales y hacer crecer tu negocio sin complicaciones.",
+    "cta": {
+        "alt": "Solicitar Cotización",
+        "url": "#contactanos"
+    }
+  },
+  "about": {
+    "section_title": "Nosotros",
+    "title": "Trabajamos con empresas que quieren potenciar su alcance.",
+    "subtitle": {
+        "text": "¿Que es lo que hacemos?",
+        "icon": { "alt": "flecha", "src": "/icons/about-icon-3.png", "width": 36, "height": 36 }
+    },
+    
+    "content": [
+        { 
+            "title": "Acompañamos a tu negocio en cada paso", 
+            "subtitle":"Desde el desarrollo técnico hasta la gestión de campañas publicitarias, te brindamos soluciones digitales completas para que tu pyme crezca online sin complicaciones.", 
+            "icon": { "alt": "Icono de crecimiento", "src": "/icons/about-icon-1.png", "width": 45, "height": 45 } 
+    }, 
+        { "title": "Nos enfocamos en resultados reales", "subtitle":"Pensamos la estrategia que mejor se adapte a tu industria y presupuesto, integrando tus redes actuales, tu sitio/tienda y utlizando pauta para sacarle el mejor retorno a tu inversión.", "icon": { "alt": "icono de estadistica", "src": "/icons/about-icon-2.png", "width": 45, "height": 45 } }
+    ],
+    "image": { "alt": "Agencia de marketing Crespo", "src": "/home/image-agency-1.png", "width": 544, "height": 362 }
+  },
+  "web": {
+    "section_id": "desarrollo-web",
+    "section_title": "Agencia de desarrollo web",
+    "title": "Creamos la plataforma digital que tu pyme necesita para crecer online.",
+    "content": [
+        { "title": "Desarrollo Web", "subtitle":"Un sitio web profesional para mostrar quién eres, qué ofreces y cómo pueden contactarte. Ideal para pymes que quieren presencia online clara y confiable." }, 
+        { "title": "Catálogo Online", "subtitle":"Un catálogo online para exhibir tus productos o servicios de forma organizada y atractiva, sin necesidad de vender directamente en la web." },
+        { "title": "Tienda Online", "subtitle":"Una tienda online lista para vender, con pasarelas de pago y gestión de envíos, pensada para que tu negocio genere ventas de manera automática." }
+    ]
+  },
+  "advertising": {
+    "section_id": "publicidad-digital",
+    "section_title": "Agencia de marketing digital",
+    "title": "Trabajamos con empresas que quieren potenciar su alcance.",
+    "content": [
+        { 
+            "title": "Publicidad en Redes Sociales", 
+            "subtitle":"Llega a tu audiencia ideal en Facebook e Instagram con anuncios segmentados que aumentan el alcance y las oportunidades de venta de tu negocio.", 
+            "icon": { "alt": "Meta Ads", "src": "/icons/rrss-icon.png", "width": 45, "height": 45 } 
+        }, 
+        { 
+            "title": "Publicidad en Google", 
+            "subtitle":"Aparece en los primeros resultados de búsqueda justo cuando tus clientes potenciales buscan lo que ofreces. Con Google Ads transformamos búsquedas en ventas.", 
+            "icon": { "alt": "Google Ads", "src": "/icons/google-icon.png", "width": 45, "height": 45 }
+        }, 
+        { 
+            "title": "Automatización de Marketing", 
+            "subtitle":"Implementamos herramientas que ahorran tiempo y aumentan la efectividad: emails automatizados, recordatorios y seguimientos para que ningún cliente se pierda.", 
+            "icon": { "alt": "Marketing Automation", "src": "/icons/rrss-icon.png", "width": 45, "height": 45 } 
+        }, 
+        { 
+            "title": "Análisis de Métricas", 
+            "subtitle":"Utilizamos Google Analytics para medir, analizar y optimizar cada campaña. Con reportes claros sabrás qué funciona y cómo mejorar los resultados de tu inversión publicitaria.", 
+            "icon": { "alt": "Alaytics", "src": "/icons/rrss-icon.png", "width": 45, "height": 45 } 
+        }
+    ],
+    "image": { 
+        "alt": "Agencia de google ads",
+        "src": "/home/digital-ads.png",
+        "width": 553,
+        "height": 677 
+    }
+  },
+  "cta": {
+    "section_id":"reporte",
+    "title": "¿Sabes cuánto está invirtiendo<br className='mobile:hidden' /> tu competencia en Google Ads?",
+    "subtitle": "Solicita tu análisis gratuito de tu industria y recibe un informe con el gasto estimado de tu competencia, el costo por clic en tu sector y oportunidades para captar más clientes pagando menos.",
+    "cta": {
+        "alt": "Solicitar Cotización",
+        "url": "#contactanos"
+    },
+    "image": { "alt": "Auditoría de google ads", "src": "/home/cta-img.png", "width": 538, "height": 679 }
+  },
+  "contact_section": {
+    "section_id":"contactanos",
+    "section_title": "Contactanos Ahora",
+    "title": "Completá el formulario y nos pondremos en contacto a la brevedad",
+    "subtitle":"",
+    "form": {
+        "fields": [
+            { "name": "name", "type": "text", "placeholder": "Nombre", "required": true },
+            { "name": "lastName", "type": "text", "placeholder": "Apellido", "required": true },
+            { "name": "email", "type": "email", "placeholder": "Correo", "required": true },
+            { "name": "phone", "type": "text", "placeholder": "Teléfono", "required": true },
+            { "name": "businessName", "type": "text", "placeholder": "Empresa", "required": true },
+            { "name": "position", "type": "text", "placeholder": "Puesto", "required": true },
+            { "name": "message", "type": "textarea", "placeholder": "Mensaje", "required": true }
+        ],
+        "submit": "Enviar Formulario"
+    }
+  }
+}
