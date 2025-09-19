@@ -77,7 +77,7 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-        <div className="h-screen flex flex-col items-center justify-center px-[120px] md:px-[50px] sm:px-[30px] mobile:px-[20px]">
+        <div className="h-screen flex flex-col items-center justify-center px-[120px] md:px-[50px] sm:px-[30px] mobile:px-[10px]">
 
           {/* <h1 className="text-center" dangerouslySetInnerHTML={{ __html: hero.title }} /> */}
           <DangerH1 text={hero.title}/>
