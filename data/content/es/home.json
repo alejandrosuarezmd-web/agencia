@@ -70,7 +70,7 @@
   },
   "cta": {
     "section_id":"reporte",
-    "title": "¿Sabes cuánto está invirtiendo<br className='mobile:hidden' /> tu competencia en Google Ads?",
+    "title": "¿Sabes cuánto está invirtiendo<br class='mobile:hidden' /> tu competencia en Google Ads?",
     "subtitle": "Solicita tu análisis gratuito de tu industria y recibe un informe con el gasto estimado de tu competencia, el costo por clic en tu sector y oportunidades para captar más clientes pagando menos.",
     "cta": {
         "alt": "Solicitar Cotización",
