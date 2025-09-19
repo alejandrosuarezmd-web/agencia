@@ -27,7 +27,7 @@ export default function WebsiteHeader() {
     const headerData = HeaderJSON;
     const { logo, menu, cta } = headerData;
     return (
-        <header className="min-h-[80px] w-full px-[120px] md:px-[50px] sm:px-[30px] mobile:px-[12px] absolute top-0  bg-white flex flex-col">
+        <header className="min-h-[80px] w-full px-[120px] md:px-[50px] sm:px-[30px] mobile:px-[20px] absolute top-0  bg-white flex flex-col">
             <div className="flex justify-between items-center">
                 <span className="font-[SharpGrotesk]">{logo}</span>
 
@@ -51,9 +51,9 @@ export default function WebsiteHeader() {
                 isOpen &&
                 <div className="w-full top-[80px] flex flex-col">
                     <ul className="flex flex-col gap-6">
-                        <li><a href="#">Desarrollo Web</a></li>
-                        <li><a href="#">Publicidad Digital</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        {
+                            menu.map((e, i) => <li key={i}><a href={e.href}>{e.label}</a></li>)
+                        }
                     </ul>
                 </div>
             }

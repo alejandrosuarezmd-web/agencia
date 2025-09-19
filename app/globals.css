@@ -97,10 +97,10 @@ h3 { font-size: 26px; }
   h2 { font-size: 26px; }
   h3 { font-size: 22px; }
 
-  .section-padding { padding: 50px 12px; }
+  .section-padding { padding: 50px 20px; }
   .section-margin { 
     margin: 0px 0px; 
-    padding: 80px 12px;
+    padding: 80px 20px;
   }
 }
 
