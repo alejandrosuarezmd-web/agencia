@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "Agencia de desarrollo web<br className='mobile:hidden' /> y publicidad digital.",
+    "title": "Agencia de desarrollo web<br class='mobile:hidden' /> y publicidad digital.",
     "subtitle":"Creamos la página web, catálogo o tienda online de tu pyme y la potenciamos con publicidad digital estratégica para atraer clientes reales y hacer crecer tu negocio sin complicaciones.",
     "cta": {
         "alt": "Solicitar Cotización",
