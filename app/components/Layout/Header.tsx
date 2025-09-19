@@ -25,7 +25,7 @@ type SiteConfig = {
 export default function WebsiteHeader() {
     const [isOpen, setOpen] = useState(false)
     const headerData = HeaderJSON;
-    const { logo, menu, cta } = headerData;
+    const { logo, menu, cta }: SiteConfig = headerData;
     return (
         <header className="min-h-[80px] w-full px-[120px] md:px-[50px] sm:px-[30px] mobile:px-[20px] absolute top-0  bg-white flex flex-col">
             <div className="flex justify-between items-center">
@@ -42,7 +42,7 @@ export default function WebsiteHeader() {
                 </div>
 
                 <div className="hidden mobile:block">
-                    <HamburgerMenu isOpen={isOpen} setOpen={setOpen} />
+                    <Hamburger toggled={isOpen} toggle={setOpen} />
 
                 </div>
             </div>
@@ -59,8 +59,4 @@ export default function WebsiteHeader() {
             }
         </header>
     )
-}
-
-const HamburgerMenu = ({ isOpen, setOpen }: { isOpen: boolean, setOpen: Dispatch<SetStateAction<boolean>> }) => {
-    return (<Hamburger toggled={isOpen} toggle={setOpen} />)
 }
