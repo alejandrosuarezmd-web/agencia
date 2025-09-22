@@ -8,7 +8,12 @@ import ArrowIcon from "@/public/icons/arrow-icon-white.svg";
 import HomePageContent from "@/data/content/es/home.json"
 import { HomeContent } from "./types/home";
 import WebsiteHeader from "./components/Layout/Header";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Agencia de desarrollo web - Kalyx",
+  description: "Somoms una agencia de desarrollo web y marketing digital ubicada en la ciudad de Crespo, Entre Ríos."
+};
 type ButtonCtaProps = {
   label?: string;
   href?: string;
