@@ -48,17 +48,17 @@
         { 
             "title": "Publicidad en Google", 
             "subtitle":"Aparece en los primeros resultados de búsqueda justo cuando tus clientes potenciales buscan lo que ofreces. Con Google Ads transformamos búsquedas en ventas.", 
-            "icon": { "alt": "Google Ads", "src": "/icons/google-icon.png", "width": 45, "height": 45 }
+            "icon": { "alt": "Google Ads", "src": "/icons/icon-gads.png", "width": 45, "height": 45 }
         }, 
         { 
             "title": "Automatización de Marketing", 
             "subtitle":"Implementamos herramientas que ahorran tiempo y aumentan la efectividad: emails automatizados, recordatorios y seguimientos para que ningún cliente se pierda.", 
-            "icon": { "alt": "Marketing Automation", "src": "/icons/rrss-icon.png", "width": 45, "height": 45 } 
+            "icon": { "alt": "Marketing Automation", "src": "/icons/icon-automation.png", "width": 45, "height": 45 } 
         }, 
         { 
             "title": "Análisis de Métricas", 
             "subtitle":"Utilizamos Google Analytics para medir, analizar y optimizar cada campaña. Con reportes claros sabrás qué funciona y cómo mejorar los resultados de tu inversión publicitaria.", 
-            "icon": { "alt": "Alaytics", "src": "/icons/rrss-icon.png", "width": 45, "height": 45 } 
+            "icon": { "alt": "Alaytics", "src": "/icons/analytics-icon.png", "width": 45, "height": 45 } 
         }
     ],
     "image": { 
