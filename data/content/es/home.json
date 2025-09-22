@@ -90,7 +90,7 @@
             { "name": "email", "type": "email", "placeholder": "Correo", "required": true },
             { "name": "phone", "type": "text", "placeholder": "Teléfono", "required": true },
             { "name": "businessName", "type": "text", "placeholder": "Empresa", "required": true },
-            { "name": "position", "type": "text", "placeholder": "Puesto", "required": true },
+            { "name": "city", "type": "text", "placeholder": "Ciudad", "required": true },
             { "name": "message", "type": "textarea", "placeholder": "Mensaje", "required": true }
         ],
         "submit": "Enviar Formulario"

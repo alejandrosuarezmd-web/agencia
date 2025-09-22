@@ -7,7 +7,7 @@ type FormData = {
   email: string;
   phone: string;
   businessName: string;
-  position: string;
+  city: string;
   message: string;
 };
 const ContactForm = ({ form }:{form: HomeForm }) => {
@@ -18,7 +18,7 @@ const ContactForm = ({ form }:{form: HomeForm }) => {
     email: "",
     phone: "",
     businessName: "",
-    position: "",
+    city: "",
     message: ""
   });
   const [status, setStatus] = useState("");
@@ -47,7 +47,7 @@ const ContactForm = ({ form }:{form: HomeForm }) => {
         email: "",
         phone: "",
         businessName: "",
-        position: "",
+        city: "",
         message: ""
       });
     } else {
