@@ -7,6 +7,7 @@ import ArrowIcon from "@/public/icons/arrow-icon-white.svg";
 
 import HomePageContent from "@/data/content/es/home.json"
 import { HomeContent } from "./types/home";
+import WebsiteHeader from "./components/Layout/Header";
 
 type ButtonCtaProps = {
   label?: string;
@@ -55,6 +56,8 @@ export default function Home() {
   const { hero, about, web, advertising, cta, contact_section }: HomeContent = HomePageContent
 
   return (
+    <>
+    <WebsiteHeader/>
     <div className="flex flex-col">
       <main className="flex flex-col  mx-auto w-full">
 
@@ -235,7 +238,12 @@ export default function Home() {
 
 
 
-      <footer id={contact_section.section_id} className="bg-[#373737] section-padding ">
+      <footer id={contact_section.section_id} className="bg-[#232323] flex flex-col gap-[44px]
+      px-[120px] md:px-[50px] sm:px-[30px] mobile:px-[20px]
+      pt-[100px] md:pt-[80px] sm:pt-[50px] mobile:pt-[20px]
+      pb-[40px] md:pb-[30px] sm:pb-[20px] mobile:pb-[20px]
+       
+      ">
         <section className="grid grid-cols-2 sm:grid-cols-1 mobile:grid-cols-1 mobile:gap-6 ">
           <div className="flex flex-col items-start">
           <div className="py-[8px] px-[20px] font-[SharpGrotesk] shadow bg-white rounded-full mb-4">{contact_section.section_title}</div>
@@ -247,11 +255,11 @@ export default function Home() {
         </div>
         </section>
 
-        <div className="flex justify-between mt-16 pt-6 border-t-[1px] border-white">
-         <span className="text-lg text-white font-[SharpGrotesk]">Alejandro Suarez</span> 
-         <span className="text-lg text-white font-[SharpGrotesk]">2025</span> 
+        <div className="flex justify-center mt-16 pt-6 border-t-[1px] border-white">
+         <span className="text-lg text-white font-[SharpGrotesk]">Kalyx - 2025</span> 
         </div>
       </footer>
     </div>
+    </>
   );
 }

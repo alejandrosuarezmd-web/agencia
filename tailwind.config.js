@@ -24,6 +24,9 @@ module.exports = {
         md: { min: "1200px", max: "1399px" }, // 1200px - 1399px
         lg: { min: "1400px" },          // ≥ 1400px
       },
+       boxShadow: {
+        'custom-header': '0px 10px 43px -19px rgba(138, 138, 138, 1)',
+      },
     },
   },
   plugins: [],

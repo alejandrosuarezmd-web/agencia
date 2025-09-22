@@ -1,6 +1,8 @@
 'use client'
 import { useState } from "react";
 import { HomeForm } from "../types/home";
+import { useRouter } from "next/navigation";
+
 type FormData = {
   name: string;
   lastName: string;
@@ -12,6 +14,8 @@ type FormData = {
 };
 const ContactForm = ({ form }:{form: HomeForm }) => {
   const t = form;
+    const router = useRouter();
+
   const [formData, setFormData] = useState<FormData>({
     name: "",
     lastName: "",
@@ -22,6 +26,8 @@ const ContactForm = ({ form }:{form: HomeForm }) => {
     message: ""
   });
   const [status, setStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -30,28 +36,28 @@ const ContactForm = ({ form }:{form: HomeForm }) => {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+ const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true); // Bloquea el formulario
+    setStatus("");
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData)
-    });
-
-    if (res.ok) {
-      setStatus("Mensaje enviado correctamente");
-      setFormData({
-        name: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        businessName: "",
-        city: "",
-        message: ""
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
       });
-    } else {
+
+      if (res.ok) {
+        // Redirigir a /gracias
+        router.push("/gracias");
+      } else {
+        setStatus("Error al enviar el mensaje");
+      }
+    } catch (err) {
       setStatus("Error al enviar el mensaje");
+    } finally {
+      setIsSubmitting(false); // desbloquea en caso de error
     }
   };
 
